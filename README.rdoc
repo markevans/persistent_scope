@@ -1,6 +1,6 @@
 = persistent_scope
 
-Description goes here.
+Work in progress!
 
 == Copyright
 

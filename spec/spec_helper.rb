@@ -17,7 +17,12 @@ Spec::Runner.configure do |config|
        :adapter => "sqlite3",
        :database  => DB_FILE
      )
+     MigrationForTest.verbose = false
      MigrationForTest.up
   end
   
+end
+
+def string_including(regexp)
+  Spec::Mocks::ArgumentMatchers::RegexpMatcher.new(regexp)
 end
